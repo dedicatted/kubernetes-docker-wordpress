@@ -6,7 +6,7 @@
  - In Jenkins should install all standart plugins and "Build Authorization Token Root Plugin" (it uses in automaticall deploy)
 
 ### 2 Step
-1. Next step depends on how kubernetes claster has been installed
+ - Next step depends on how kubernetes claster has been installed
  - If You used on Jenkins machine
 ```
 export KUBERNETES_PROVIDER=aws;
