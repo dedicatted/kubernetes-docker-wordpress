@@ -26,8 +26,19 @@ mv kubectl /usr/local/bin/
 1. In Jenkins job insert token Build Triggers -> Trigger builds remotely (e.g., from scripts) -> Authentication Token Add create Webhook in GitHub repository with your values, for instance  http://12.34.56.789:8080/buildByToken/buildWithParameters?job="job_name"&token="token_value"
 1. And insert your values in Jenkins parameters REGION, ECR_REPO, STACK_NAME, POD, CONFIG
 
+### Repositories
 
+1. nodejs
+https://github.com/dedicatted/kuber-nodejs
 
+1. nginx
+https://github.com/dedicatted/kuber-nginx
+
+1. haproxy
+https://github.com/dedicatted/kuber-haproxy
+
+1. wordpress
+https://github.com/dedicatted/kuber-wordpress
 
 
 
