@@ -30,25 +30,25 @@ sudo chown jenkins /var/config
 
 
 ### 3 Step
-1. Jenkin tuning
-1. Mail
-1. Insert your Email, Password and SMTP server in Manage Jenkins -> Configure System -> E-mail Notification and in the job insert "E-mail Notification", also should choose "Send e-mail for every unstable build"
-1. Autobuild
-1. In Jenkins job insert token Build Triggers -> Trigger builds remotely (e.g., from scripts) -> Authentication Token Add create Webhook in GitHub repository with your values, for instance  http://12.34.56.789:8080/buildByToken/buildWithParameters?job="job_name"&token="token_value"
-1. And insert your values in Jenkins parameters REGION, ECR_REPO, STACK_NAME, POD, CONFIG
+Jenkin tuning
+ - Mail
+ - Insert your Email, Password and SMTP server in Manage Jenkins -> Configure System -> E-mail Notification and in the job insert "E-mail Notification", also should choose "Send e-mail for every unstable build"
+ - Autobuild
+ - In Jenkins job insert token Build Triggers -> Trigger builds remotely (e.g., from scripts) -> Authentication Token Add create Webhook in GitHub repository with your values, for instance  http://12.34.56.789:8080/buildByToken/buildWithParameters?job="job_name"&token="token_value"
+ - And insert your values in Jenkins parameters REGION, ECR_REPO, STACK_NAME, POD, CONFIG
 
 ### Repositories
 
-1. nodejs
+ - nodejs
 https://github.com/dedicatted/kuber-nodejs
 
-1. nginx
+ - nginx
 https://github.com/dedicatted/kuber-nginx
 
-1. haproxy
+ - haproxy
 https://github.com/dedicatted/kuber-haproxy
 
-1. wordpress
+ - wordpress
 https://github.com/dedicatted/kuber-wordpress
 
 
