@@ -7,12 +7,15 @@
 
 ### 2 Step
 1. Next step depends on how kubernetes claster has been installed
-1. If You used 
+1. If You used on Jenkins machine
 ```
 export KUBERNETES_PROVIDER=aws;
 curl -sS https://get.k8s.io | bash
 ```
-1. on Jenkins machine You need to add kubectl to the PATH using command ```export PATH=<path/to/kubernetes-directory>/platforms/linux/amd64:$PATH```
+1. You need to add kubectl to the PATH using command 
+```
+export PATH=<path/to/kubernetes-directory>/platforms/linux/amd64:$PATH
+```
 1. If kubernetes has been installed from another machine You should install kuberctl using next commands
 ```
 curl -O https://storage.googleapis.com/kubernetes-release/release/v1.4.3/bin/linux/amd64/kubectl
@@ -20,7 +23,10 @@ chmod +x kubectl
 mv kubectl /usr/local/bin/
 ```
 1. and copy a config file from ~/.kube/config in directory where Jenkins will be able to read it(for example /var)
-1. ans set permisions ```sudo chown jenkins /var/config```
+1. ans set permisions 
+```
+sudo chown jenkins /var/config
+```
 
 
 ### 3 Step
