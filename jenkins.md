@@ -2,7 +2,7 @@
 
 ### 1 Step
 
- > Install Java and Jenkins
+ - Install Java and Jenkins
  - In Jenkins should install all standart plugins and "Build Authorization Token Root Plugin" (it uses in automaticall deploy)
 
 ### 2 Step
