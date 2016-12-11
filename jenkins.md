@@ -15,6 +15,7 @@ curl -sS https://get.k8s.io | bash
  - You need to add kubectl to the PATH using command 
 ```
 export PATH=<path/to/kubernetes-directory>/platforms/linux/amd64:$PATH
+sudo chmod +x <path/to/kubernetes-directory>/platforms/linux/amd64/kubectl
 ```
  - If kubernetes has been installed from another machine You should install kuberctl using next commands
 ```
