@@ -3,9 +3,14 @@
 ### 1 Step
 
  - Install Java and Jenkins
- - In Jenkins should install all standart plugins and "Build Authorization Token Root Plugin" (it uses in automaticall deploy)
+ - In Jenkins should install all standart plugins and "Build Authorization Token Root Plugin" (it uses in automaticall deploy),
+ 
+### 2 Setp
+ - IAM Role
+ - In AWS console select IAM -> Users -> Add users
+ - create user jenkins and add permissions AmazonEC2ContainerRegistryFullAccess - AWS Managed policy
 
-### 2 Step
+### 3 Step
  - Next step depends on how kubernetes claster has been installed
  - If You used on Jenkins machine
 ```
@@ -30,7 +35,7 @@ sudo chown jenkins /var/config
 ```
 
 
-### 3 Step
+### 4 Step
 Jenkin tuning
  - Mail
  - Insert your Email, Password and SMTP server in Manage Jenkins -> Configure System -> E-mail Notification and in the job insert "E-mail Notification", also should choose "Send e-mail for every unstable build"
