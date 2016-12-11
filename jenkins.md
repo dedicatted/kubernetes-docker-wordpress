@@ -35,7 +35,7 @@ Jenkin tuning
  - Insert your Email, Password and SMTP server in Manage Jenkins -> Configure System -> E-mail Notification and in the job insert "E-mail Notification", also should choose "Send e-mail for every unstable build"
  - Autobuild
  - In Jenkins job insert token Build Triggers -> Trigger builds remotely (e.g., from scripts) -> Authentication Token Add create Webhook in GitHub repository with your values, for instance  http://12.34.56.789:8080/buildByToken/buildWithParameters?job="job_name"&token="token_value"
- - And insert your values in Jenkins parameters REGION, ECR_REPO, STACK_NAME, POD, CONFIG
+ - And insert your values in Jenkins parameters REGION, ECR_REPO, STACK_NAME, POD, CONFIG, KUBECTL
 
 ### Repositories
 
